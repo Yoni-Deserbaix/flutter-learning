@@ -5,8 +5,13 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Color(0xFF5F67EA),
+      body: SingleChildScrollView(
+        child: Stack(
+          children: [Image.asset("assets/images/bg_liquid.png", width: 200)],
+        ),
+      ),
     );
   }
 }

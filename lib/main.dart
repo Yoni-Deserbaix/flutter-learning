@@ -24,11 +24,16 @@ class MyApp extends StatelessWidget {
           children: [
             Text(
               "My First Flutter App",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Poppins"),
             ),
             Text(
               "lorem Ipsum is simply dummy text of the printing",
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(
+                fontSize: 20,
+              ),
               textAlign: TextAlign.center,
             )
           ],

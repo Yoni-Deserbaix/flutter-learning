@@ -19,11 +19,20 @@ class MyApp extends StatelessWidget {
           title: const Text("Flutter App"),
         ),
         body: const Center(
-          child: Text(
-            "My First Flutter App",
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          ),
-        ),
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "My First Flutter App",
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              "lorem Ipsum is simply dummy text of the printing",
+              style: TextStyle(fontSize: 20),
+              textAlign: TextAlign.center,
+            )
+          ],
+        )),
       ),
     );
   }

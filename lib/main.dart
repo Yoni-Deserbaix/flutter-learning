@@ -16,13 +16,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Flutter App"),
+          title: const Text(
+            "Flutter App",
+            style: TextStyle(color: Colors.white),
+          ),
+          backgroundColor: Colors.blue,
         ),
-        body: const Center(
+        body: Center(
             child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            Image.asset("assets/images/flutter-bird-logo.png"),
+            const Text(
               "My First Flutter App",
               style: TextStyle(
                   fontSize: 30,

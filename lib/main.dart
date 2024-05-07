@@ -64,15 +64,19 @@ Widget HomePage() {
           ),
           textAlign: TextAlign.center,
         ),
-        Padding(padding: EdgeInsets.only(top: 10)),
-        ElevatedButton(
+        const Padding(padding: EdgeInsets.only(top: 10)),
+        ElevatedButton.icon(
           style: const ButtonStyle(
               backgroundColor: MaterialStatePropertyAll(Colors.blue),
               padding: MaterialStatePropertyAll(EdgeInsets.all(15))),
           onPressed: () => print("click btn"),
-          child: const Text(
+          label: const Text(
             "Display the planning",
             style: TextStyle(fontSize: 15, color: Colors.white),
+          ),
+          icon: const Icon(
+            Icons.calendar_month,
+            color: Colors.white,
           ),
         )
       ],

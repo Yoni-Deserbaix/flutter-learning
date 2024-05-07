@@ -1,4 +1,5 @@
-import "package:flutter/material.dart"; // Importation du package Flutter qui contient les widgets Material Design
+import "package:flutter/material.dart";
+import "package:gamestore/pages/home/home.dart"; // Importation du package Flutter qui contient les widgets Material Design
 
 void main() {
   runApp(const MyApp());
@@ -10,16 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   // Définit l'UI de l'application
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Gamestore",
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        // Header
-        appBar: AppBar(
-          backgroundColor: Colors.blue,
-          title: const Text("My App Bar"),
-        ),
-      ),
-    );
+    return const MaterialApp(
+        title: "Gamestore",
+        debugShowCheckedModeBanner: false,
+        home: HomePage());
   }
 }

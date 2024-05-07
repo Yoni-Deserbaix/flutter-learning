@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: EventPage(),
+      home: HomePage(),
     );
   }
 }
@@ -57,12 +57,23 @@ Widget HomePage() {
           style: TextStyle(
               fontSize: 30, fontWeight: FontWeight.bold, fontFamily: "Poppins"),
         ),
-        Text(
+        const Text(
           "lorem Ipsum is simply dummy text of the printing",
           style: TextStyle(
             fontSize: 20,
           ),
           textAlign: TextAlign.center,
+        ),
+        Padding(padding: EdgeInsets.only(top: 10)),
+        ElevatedButton(
+          style: const ButtonStyle(
+              backgroundColor: MaterialStatePropertyAll(Colors.blue),
+              padding: MaterialStatePropertyAll(EdgeInsets.all(15))),
+          onPressed: () => print("click btn"),
+          child: const Text(
+            "Display the planning",
+            style: TextStyle(fontSize: 15, color: Colors.white),
+          ),
         )
       ],
     )),

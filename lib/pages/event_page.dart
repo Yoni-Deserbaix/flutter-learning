@@ -13,8 +13,35 @@ class EventPage extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
         ),
-        body: const Center(
-          child: Text("Available soon", style: TextStyle(fontSize: 25)),
+        body: Center(
+          child: ListView(
+            children: const [
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Go to shopping (2 PM)'),
+                  subtitle: Text('lorem impsum dolor sit amet'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Go running (5 PM)'),
+                  subtitle: Text('lorem impsum dolor sit amet'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Go to cinema (8 PM)'),
+                  subtitle: Text('lorem impsum dolor sit amet'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+            ],
+          ),
         ));
   }
 }
